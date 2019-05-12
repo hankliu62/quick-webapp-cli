@@ -1,0 +1,57 @@
+{
+  "recommendations": [
+    // 代码格式相关
+    "streetsidesoftware.code-spell-checker", // 单词拼写检查
+    "spywhere.guides", // 高亮缩进基准线
+
+    // es 相关
+    "dbaeumer.vscode-eslint", // es代码规范检查
+    "dzannotti.vscode-babel-coloring", // babel 语法高亮
+    "amatiasq.sort-imports", // import 排序
+    "hookyqr.beautify", // 格式化代码
+    "xabikos.javascriptsnippets",  // js(es6) 语法提示, 智能提示和自动完成
+
+    // react 相关
+    "dsznajder.es7-react-js-snippets", // react 语法提示, 智能提示和自动完成
+
+    // vue 相关
+    "octref.vetur", // Vue语法高亮，语法提示，错误检查，代码规范检查，格式化
+    "hollowtree.vue-snippet", // Vue2 语法高亮，智能提示和自动完成
+
+    // style 相关
+    "shinnn.stylelint",  // css,less,scss,sas代码规范检查
+    "zignd.html-css-class-completion", // CSS 类名智能提示
+
+    // html 标签
+    "formulahendry.auto-close-tag", // 自动闭合HTML标签
+    "formulahendry.auto-rename-tag", // 修改HTML标签时，自动修改匹配的标签
+    "abusaidm.html-snippets", // html 语法提示, 智能提示和自动完成
+    "vincaslt.highlight-matching-tag", // 高亮匹配的标签
+
+    // vscode ide 相关
+    "ms-ceintl.vscode-language-pack-zh-hans", // vscode中文包
+    "robertohuertasm.vscode-icons", // 文件图标, 不同类型的文件显示不同的图标
+
+    // git 相关
+    "donjayamanne.githistory", // 查看git log
+    "eamodio.gitlens", // git 提交记录
+    "waderyan.gitblame", // 状态栏显示当前行的Git信息
+
+    // mysql 相关
+    "formulahendry.vscode-mysql", // 管理mysql的GUI工具
+
+    // 代码补全
+    "christian-kohler.npm-intellisense", // 导入语句自动补全npm模块名称，智能提示和自动完成
+    "christian-kohler.path-intellisense", // 导入语句自动补全文件路径，智能提示和自动完成
+
+    // json 相关
+    "mohsen1.prettify-json", // json格式化
+
+    // 其他
+    "wix.vscode-import-cos", // 在导入第三方库时在语句末尾展示包大小(kb)
+    "wakatime.vscode-wakatime", // 记录使用vscode开发时间，语言等特性的统计
+    "formulahendry.code-runner", // 万能语言运行环境
+    "joelday.docthis", // 快速注释
+    "wayou.vscode-todo-highlight", // 备忘插件
+  ]
+}

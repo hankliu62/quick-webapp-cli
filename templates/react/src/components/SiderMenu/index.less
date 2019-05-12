@@ -1,0 +1,57 @@
+@import 'styles/variables.less';
+
+.c-layout-sider {
+  overflow: hidden;
+
+  .c-layout-sider-logo {
+    height: 64px;
+    overflow: hidden;
+    padding-left: 24px;
+    background: @layout-logo-background;
+    line-height: 64px;
+
+    .logo-link {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .logo-image {
+        max-height: 36px;
+        border-radius: 5px;
+      }
+
+      .logo-title {
+        margin: 0;
+        padding-left: 17px;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &.c-layout-sider-dark {
+    .c-layout-sider-logo {
+      .logo-link {
+        .logo-title {
+          color: @white;
+        }
+      }
+    }
+  }
+
+  &.c-layout-sider-collapsed {
+    .c-layout-sider-logo {
+      width: 100%;
+
+      .logo-link {
+        .logo-title {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .c-layout-sider-menu {
+    transition: all 0.2s;
+  }
+}

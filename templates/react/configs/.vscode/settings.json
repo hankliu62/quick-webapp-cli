@@ -1,0 +1,112 @@
+{
+  "cSpell.language": "en",
+  // 将下面的单纯加入字典中，不警告
+  "cSpell.words": [
+    "antd",
+    "backend",
+    "kbps",
+    "wechat",
+    "componentWillUnmount",
+    "lifecycle"
+  ],
+  // 控制差异编辑器是否将对前导空格或尾随空格的更改显示为差异
+  "diffEditor.ignoreTrimWhitespace": true,
+  // 按 "Tab" 时插入空格。
+  "editor.insertSpaces": true,
+  // 控制编辑器是否应呈现空白字符
+  "editor.renderWhitespace": "all",
+  // 一个制表符等于的空格数。
+  "editor.tabSize": 2,
+  // 删除尾随自动插入的空格
+  "editor.trimAutoWhitespace": true,
+  // 控制折行的方式。
+  //  - off: 永不换行。
+  //  - on: 将在视区宽度处换行。
+  //  - wordWrapColumn: 在 `editor.wordWrapColumn` 处折行。
+  //  - bounded: 在视区宽度和 `editor.wordWrapColumn` 中的较小值处折行。
+  "editor.wordWrap": "on",
+  // 在 `editor.wordWrap` 为 `wordWrapColumn`  或 `bounded` 时，控制编辑器的折行列。
+  "editor.wordWrapColumn": 120,
+  // 保持文件时自动fix eslint的错误
+  "eslint.autoFixOnSave": true,
+  // 配置语言的文件关联 (如: `"*.extension": "html"`)。这些关联的优先级高于已安装语言的默认关联。
+  "files.associations": {
+    ".stylelintrc": "json"
+  },
+  // 控制已更新文件的自动保存。可在[此处](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)阅读有关自动保存的详细信息。
+  //  - off: 永不自动保存更新后的文件。
+  //  - afterDelay: 当文件修改后的时间超过 `files.autoSaveDelay` 中配置的值时自动进行保存。
+  //  - onFocusChange: 编辑器失去焦点时自动保存更新后的文件。
+  //  - onWindowChange: 窗口失去焦点时自动保存更新后的文件。
+  "files.autoSave": "onWindowChange",
+  // 控制自动保存已更新文件的延迟时间 (毫秒)。仅在 `files.autoSave` 设置为 `afterDelay` 时生效。
+  "files.autoSaveDelay": 5000,
+  // 配置排除的文件和文件夹的 glob 模式。例如，文件资源管理器将根据此设置决定要显示或隐藏的文件和文件夹。可在[此处](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)阅读有关 glob 模式的详细信息。
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  // 默认行尾字符。
+  //  - \n: LF
+  //  - \r\n: CRLF
+  //  - auto: 使用特定于操作系统的行尾字符。
+  "files.eol": "\n",
+  // 启用后，保存文件时在文件末尾插入一个最终新行。
+  "files.insertFinalNewline": true,
+  // 启用后，保存文件时将删除在最终新行后的所有新行。
+  "files.trimFinalNewlines": true,
+  // 启用后，将在保存文件时剪裁尾随空格。
+  "files.trimTrailingWhitespace": true,
+  // 启用后，将自动从当前 Git 存储库的默认远程位置抓取提交。
+  "git.autofetch": true,
+  // 同步 Git 存储库前请先进行确认。
+  "git.confirmSync": false,
+  // gitlens配置
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": true,
+    "suppressNoRepositoryWarning": false,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.remotes": [
+    {
+      "type": "GitHub",
+      "domain": "github.com"
+    },
+    {
+      "type": "Custom",
+      "domain": "git.xxx.com.cn",
+      "name": "Origin",
+      "urls": {
+        "repository": "http://git.xxx.com.cn/${repo}",
+        "branches": "http://git.xxx.com.cn/${repo}/branches",
+        "branch": "http://git.xxx.com.cn/${repo}/commits/${branch}",
+        "commit": "http://git.xxx.com.cn/${repo}/commit/${id}",
+        "file": "http://git.xxx.com.cn/${repo}?path=${file}${line}",
+        "fileInBranch": "http://git.xxx.com.cn/${repo}/blob/${branch}/${file}${line}",
+        "fileInCommit": "http://git.xxx.com.cn/${repo}/blob/${id}/${file}${line}",
+        "fileLine": "#L${line}",
+        "fileRange": "#L${start}-L${end}"
+      }
+    }
+  ],
+  // 启用/禁用 JavaScript 验证。
+  "javascript.validate.enable": false,
+  // 配置在搜索中排除的文件和文件夹的 glob 模式。已经继承 `files.exclude` 设置的所有 glob 模式。可在[此处](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)阅读有关 glob 模式的详细信息。
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    ".vscode": true
+  },
+  // 排序失败时抑制警告
+  "sort-imports.suppress-warnings": true
+}

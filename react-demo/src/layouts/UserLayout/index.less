@@ -1,0 +1,95 @@
+@import 'styles/variables.less';
+
+.user-layout {
+  position: relative;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all 2s ease;
+
+  .user-layout-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: @black-25;
+    z-index: 1;
+  }
+
+  .user-layout-content {
+    position: relative;
+    padding: 50px 0;
+    z-index: 2;
+
+    .user-layout-container-wrapper {
+      display: flex;
+      width: 90%;
+      max-width: 756px;
+      min-height: 480px;
+      overflow: hidden;
+      margin: 0 auto;
+      background-color: @white;
+      border-radius: 5px;
+      box-shadow: 0 0 3px @white-25;
+
+      .user-layout-container-image {
+        background-image: url('/static/images/layouts/login-bg.jpg');
+        background-position: center;
+        background-size: cover;
+        flex: 35;
+      }
+
+      .user-layout-container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px;
+        flex: 65;
+
+        .user-layout-container-header {
+          height: 44px;
+          text-align: center;
+          line-height: 44px;
+
+          a {
+            display: inline-block;
+            text-decoration: none;
+          }
+
+          img {
+            height: 44px;
+            margin-right: 16px;
+            vertical-align: top;
+          }
+
+          .title {
+            position: relative;
+            top: 2px;
+            font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-size: 33px;
+            font-weight: 600;
+            color: @black-85;
+          }
+        }
+
+        .user-layout-container-body {
+          flex: 1;
+        }
+
+        .user-layout-container-footer {
+          margin: 48px 0 0;
+          padding: 0 16px;
+          text-align: center;
+          font-size: 14px;
+          color: @black-45;
+        }
+      }
+    }
+  }
+
+  &:empty {
+    display: none;
+  }
+}
